@@ -1,0 +1,38 @@
+@baseUri = http://127.0.0.1:8000/api/orders
+
+@id= 48
+
+###
+# GET Orders 
+GET {{baseUri}}
+
+
+###
+#GET One Order 
+GET {{baseUri}}/{{id}}
+
+###
+# create an Order
+POST {{baseUri}}
+Content-Type: application/json
+
+{
+    "user_id": 2,
+    "delivered_at":null,
+    "shipped":0
+}
+###
+
+Put {{baseUri}}/{{id}}
+Content-Type: application/json
+
+{
+    "user_id":3,
+    "delivered_at":null,
+    "shipped":1
+}
+
+
+###
+# Delete an Order
+DELETE {{baseUri}}/{{id}}

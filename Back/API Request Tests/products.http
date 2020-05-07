@@ -1,0 +1,45 @@
+@baseURI = Http://127.0.0.1:8000/api/products
+@id = 4
+
+
+###
+# GET ALL PRODUCTS 
+GET {{baseURI}} 
+
+###
+
+# GET ALL ONE PRODUCT 
+GET {{baseURI}}/{{id}}
+
+
+
+###
+# CREATE NEW PRODUCT 
+POST {{baseURI}}
+Content-Type: application/json
+
+{
+    "seller_id" : 2,
+    "category_id" : 2, 
+    "name" : "this", 
+    "price" : 200, 
+    "description" : "Grrrrrrrrrr"
+}
+
+
+###
+# EDIT ONE PRODUCT 
+PUT {{baseURI}}/{{id}}
+Content-Type: application/json
+
+{
+    "seller_id" : 2,
+    "category_id" : 2, 
+    "name" : "this new name ", 
+    "price" : 200, 
+    "description" : "new Description ..."
+}
+
+###
+# DELETE A PRODUCT 
+DELETE {{baseURI}}/{{id}}
