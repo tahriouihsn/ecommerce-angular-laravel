@@ -47,7 +47,7 @@ composer install
 * Permettre aux clients de donner leurs avis sur un ou plusieurs produits.
 * Permettre aux coopératives de voir la liste des commandes qu’ils vont fournir au client.
 * Permettre au client d'ajouter un ou plusieurs produits .
-* ...ETC
+
 
 
 
