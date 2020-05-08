@@ -1,0 +1,103 @@
+.top-bar {
+  background: #f4f4f4;
+  padding: 10px 0 9px;
+  font-size: 12px;
+}
+.drop-text{
+  font-size: 12px;
+}
+.top-bar .cnt-account {
+  float: left;
+  padding: 6px 0px;
+}
+.top-bar .cnt-account ul {
+  margin: 0px;
+}
+.top-bar .cnt-account ul > li {
+  display: inline-block;
+  line-height: 12px;
+  padding: 3px 12px;
+  border-left: 1px solid #e2e2e2;
+}
+.top-bar .cnt-account ul > li:last-child {
+  border-right: 1px solid #e2e2e2;
+}
+.top-bar .cnt-account ul > li a {
+  color: #888888;
+  padding: 0px;
+  font-weight: 400;
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.top-bar .cnt-account ul > li a .icon {
+  display: block;
+  float: left;
+  padding-right: 6px;
+  font-size: 11px;
+}
+.top-bar .cnt-account ul > li a:hover,
+.top-bar .cnt-account ul > li a:focus {
+  text-decoration: none;
+}
+.top-bar .cnt-block {
+  float: right;
+}
+.top-bar .cnt-block .list-inline {
+  margin: 0px;
+}
+.top-bar .cnt-block .list-inline > li {
+  display: inline-block;
+}
+.top-bar .cnt-block .list-inline > li > a {
+  padding: 6px 15px;
+  border: 1px solid #d4d4d4;
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  color: #888;
+  display: inline-block;
+}
+.top-bar .cnt-block .list-inline > li > a .value {
+  color: #666;
+  margin: 0px 7px;
+}
+.top-bar .cnt-block .list-inline > li > a:hover,
+.top-bar .cnt-block .list-inline > li > a:focus {
+  text-decoration: none;
+  color: #888888;
+}
+.top-bar .cnt-block .list-inline > li .dropdown-menu {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #e1e1e1;
+  top: 125%;
+  left: 5px;
+}
+.dropdown-menu li a {
+  color: #666;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin-left: 4px;
+}
+.dropdown-small {
+  margin-left: 3px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .top-bar .cnt-account ul > li {
+    padding: 3px 2px;
+  }
+  .top-bar .header-top-inner .cnt-block .list-inline li {
+    margin: 7px 0;
+  }
+}
+.list-unstyled li a{
+  cursor: pointer;
+}

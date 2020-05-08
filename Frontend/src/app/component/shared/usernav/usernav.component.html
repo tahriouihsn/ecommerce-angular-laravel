@@ -1,0 +1,73 @@
+<header class="header-style-1">
+  <div class="top-bar animate-dropdown clearfix">
+    <div class="container">
+      <div class="header-top-inner">
+        <div class="cnt-account">
+          <ul *ngIf="loggedIn" class="list-unstyled">
+            <li>
+              <div class="dropdown">
+                <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  My Account ({{ user?.name }})
+                </a>
+                <div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
+                  <a class=" px-2 drop-text" routerLink="/profile">Profile</a>
+
+                </div>
+              </div>
+              <!-- <a routerLink="/profile"><i class="icon fa fa-user"></i>My Account (<span class="font-weight-bold text-capitalize">{{ user?.name | uppercase}}</span>)</a> -->
+            </li>
+            <li>
+              <a routerLink="/"><i class="icon fa fa-heart"></i>Wishlist</a>
+            </li>
+            <li>
+              <a routerLink="/"><i class="icon fa fa-shopping-cart"></i>My Cart</a>
+            </li>
+            <li>
+              <a routerLink="/"><i class="icon fa fa-key"></i>Checkout</a>
+            </li>
+            <li>
+              <a  (click)=logout()><i class="icon fa fa-sign-out"></i>Logout</a>
+            </li>
+          </ul>
+          <ul *ngIf="!loggedIn" class="list-unstyled">
+            <li>
+              <a routerLink="login"><i  class="icon fa fa-user"></i>Login</a>
+            </li>
+            <li>
+              <a routerLink="login"><i  class="icon fa fa-user-plus"></i>Register</a>
+            </li>
+            <li>
+              <a routerLink="login"><i  class="icon fa fa-cart-plus"></i>Become a seller</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.cnt-account -->
+
+        <div class="cnt-block">
+          <div class="list-unstyled list-inline">
+            <li class="dropdown dropdown-small">
+              <a
+                routerLink="/"
+                class="dropdown-toggle"
+                data-hover="dropdown"
+                data-toggle="dropdown"
+              >
+                <span class="key">language :</span>
+                <span class="value">English </span><b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a routerLink="/">English</a></li>
+                <li><a routerLink="/">French</a></li>
+                <li><a routerLink="/">Arabic</a></li>
+              </ul>
+            </li>
+          </div>
+          <!-- /.list-unstyled -->
+        </div>
+        <!-- /.cnt-cart -->
+      </div>
+      <!-- /.header-top-inner -->
+    </div>
+    <!-- /.container -->
+  </div>
+</header>

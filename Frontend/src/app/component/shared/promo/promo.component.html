@@ -1,0 +1,20 @@
+<h3>Solde</h3>
+<hr class="mx-5 border-success" />
+<owl-carousel-o
+  [options]="customOptions"
+  (dragging)="isDragging = $event.dragging"
+>
+  <ng-container  *ngFor="let product of products.products">
+    <ng-template carouselSlide>
+      <a
+        [owlRouterLink]="['/product']"
+        [stopLink]="isDragging"
+        
+        style="text-decoration: none;"
+      >
+        <app-product [product]="product"></app-product>
+      </a>
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>

@@ -1,0 +1,18 @@
+.cart{
+ width:48px;
+ height: 48px;
+  border-radius: 5px;
+  background-color: #4aae34;
+}
+.cart i{
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.cart span{
+  font-size: 14px;
+  bottom: 60px;
+  left: 40px;
+}
+

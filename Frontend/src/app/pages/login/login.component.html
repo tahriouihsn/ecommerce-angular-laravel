@@ -1,0 +1,84 @@
+
+<div class="container  bg-white shadow p-5 my-5 position-relative">
+  <mat-progress-bar *ngIf="Onloading" mode="indeterminate" class="bar"></mat-progress-bar>
+  <div class="row  p-2">
+
+    <div  class=" col-md-6 text-center border-right m-auto d-block px-5">
+
+
+
+      <h2>Sign In</h2>
+      <div *ngIf="error" class="alert alert-danger" role="alert">
+        {{error}}
+      </div>
+      <form (ngSubmit)="UserLogin()" [formGroup]="login">
+        <mat-form-field class="example-full-width">
+          <input
+            autocomplete="off"
+            formControlName="email"
+            matInput
+            type="email"
+            placeholder="Email"
+            class="caret"
+
+          />
+          <mat-error *ngIf="login.get('email').hasError('email')">
+            Please enter a valid email
+          </mat-error>
+          <mat-error *ngIf="login.get('email').hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+           </mat-form-field
+        ><br />
+        <mat-form-field class="example-full-width">
+          <input
+            autocomplete="off"
+            formControlName="password"
+            matInput
+            type="password"
+            placeholder="Password"
+            class="caret"
+
+          />
+          <mat-error *ngIf="login.get('password').hasError('minlength')">
+            Password must have at least 6 chars
+          </mat-error>
+          <mat-error *ngIf="login.get('password').hasError('required')">
+            Password is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <br />
+        <div class=" row justify-content-between mx-4">
+          <mat-checkbox>Stay Connected!</mat-checkbox>
+          <a
+            class="text-decoration-none text-dark"
+            routerLink="fpwd"
+            style="font-size: 16px;">
+            Mot de Passe Oublié ?</a>
+        </div>
+
+        <button type="submit" mat-flat-button color="primary" class="p-2 bt">
+          Sign in
+        </button>
+      </form>
+      <br />
+
+      <!-- <i class="fa fa-users"></i> -->
+    </div>
+
+    <div  class="col-md-6 text-center border-left m-auto d-block px-5">
+      <h2>Register</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos non
+        accusamus recusandae rem. Non dolorem blanditiis iusto illum, incidunt
+        quisquam!
+      </p>
+      <button mat-flat-button [color]="'success'" class="p-2 bt my-2">
+        Sign up Coop
+      </button>
+      <button mat-flat-button [color]="'priimary'" class="p-2 bt my-2">
+        Sign up as Client
+      </button>
+    </div>
+  </div>
+</div>

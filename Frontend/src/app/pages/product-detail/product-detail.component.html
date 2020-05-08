@@ -1,0 +1,106 @@
+<div class="container mt-4 mb-5">
+  <div class="row border rounded shadow-lg py-4 m-0">
+    <div class="col-2 col-md-1  imgs mt-2 ">
+      <img
+        src="{{ item.path }} "
+        *ngFor="let item of product.images;let i= index"
+        (click)="changeImg(item.path)"
+        alt="{{ i }}"
+      />
+
+    </div>
+    <div class="col-3 col-md-3 mt-2 p-0 m-0">
+      <img class="img" src="{{ Image }}" alt="Product" />
+    </div>
+    <div class="col-md-5 mt-4 border-right">
+      <i
+        class="fa fa-heart-o text-danger position-relative  heart float-right"
+      ></i>
+      <h1>{{ product.name }}</h1>
+      <p>Detail: Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <hr />
+      <span class="text-secondary price font-weight-bold">{{ product.price }} MAD</span>
+      <div class="col-lg-6">
+      <div class="input-group">
+        <span class="input-group-btn">
+            <button type="button"  class="quantity-left-minus btn btn-danger btn-number rounded-0" (click)="minOne()">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+        </span>
+        <input  type="text" [(ngModel)]="quantity" id="quantity" name="quantity" class="form-control input-number" value="{{ quantity }}" min="1" max="100">
+        <span class="input-group-btn">
+            <button type="button" class="quantity-right-plus btn btn-success btn-number rounded-0" (click)="addOne()">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+        </span>
+      </div>
+    </div>
+
+
+      <button type="button" class="btn btn-success my-1  btn-block p-2 addto" (click)="openSnackBar('Product Added to cart');addToCart()" >
+        Add to cart
+        <i
+          class="fa fa-opencart"
+          style="font-size:24px;"
+          aria-hidden="true"
+        ></i>
+      </button>
+      <div class="row">
+        <div class="col-1 col-md-1">
+          <img class="icon mt-2" src="assets/images/shield.svg" alt="" />
+        </div>
+
+        <div class="col-11 col-md-11">
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste,
+            explicabo eum.</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="row pr-2">
+        <div class="col-md-4">
+          <img
+            class="imgben border border-dark py-3 px-1 rounded"
+            src="assets/images/truck.png"
+            alt=""
+          />
+        </div>
+        <div class="col-md-8 p-0">
+          <p>
+            <strong>Shipping</strong> ipsum dolor sit amet consectetur
+            adipisicing elit. Reiciendis, dolores. Non ab quasi accusamus nobis
+            id consequuntur facilis excepturi repellat?
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i class="iben fa fa-undo border border-dark py-3 px-3 rounded"></i>
+        </div>
+        <div class="col-md-8 p-0">
+          <p>
+            <strong>Return</strong> ipsum dolor sit amet consectetur adipisicing
+            elit. Reiciendis, dolores. Non ab quasi accusamus nobis id
+            consequuntur facilis excepturi repellat?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card my-3">
+    <div class="card-body">
+     <strong>Description:</strong> {{ product.description }}
+    </div>
+  </div>
+  <h1>Reviews</h1>
+  <div class="card my-3">
+    <div class="card-body" *ngFor="let product of product.reviews">
+      <strong>User:</strong> {{ product.user_name }}
+      <br>
+     <strong>Rate:</strong> {{ product.rate }}
+     <br>
+     <strong>Comment:</strong> {{ product.comment }}
+     <hr>
+    </div>
+  </div>
+</div>

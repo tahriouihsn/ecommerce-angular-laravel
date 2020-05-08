@@ -1,0 +1,12 @@
+<a [routerLink]="['/product',product.id]" style="text-decoration: none;">
+  <div class="border-dark lproduct position-relative">
+    <img src="{{ product?.images[0]?.path }}" alt="" />
+    <i
+      class="material-icons text-white bg-success p-2 rounded-circle position-absolute add"
+    >
+      add_shopping_cart
+    </i>
+    <p class="mb-0 mt-4">{{ product.name }}</p>
+    <p class="text-center">{{ product.price }} MAD</p>
+  </div>
+</a>

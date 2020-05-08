@@ -1,0 +1,35 @@
+.imgs img {
+  width: 70px;
+  margin: 8px 0px 8px 0px;
+}
+h1 {
+  font-size: 1.25rem;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+}
+.img {
+  max-width: 280px;
+  box-shadow: #000 1px 1px 4px;
+  border-radius: 5px;
+}
+.price {
+  font-size: 22px;
+}
+.addto {
+  font-size: 20px;
+}
+.heart {
+  font-size: 26px;
+}
+.icon {
+  width: 30px;
+}
+span {
+  font-size: 14px;
+}
+.imgben {
+  width: 60px;
+}
+.iben {
+  font-size: 30px;
+}
