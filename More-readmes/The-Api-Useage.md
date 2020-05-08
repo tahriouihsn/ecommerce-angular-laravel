@@ -53,11 +53,13 @@
 For this Request you need to be Looged in first. 
 
 `POST: localhost:8000/api/reviews`
+```
 {
     "product_id" : 3, 
     "comment" : "this product is fine", 
     "rate" : 5
 }
+```
 
 
 ## Some Api Responses 
