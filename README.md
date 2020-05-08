@@ -30,7 +30,7 @@ composer install
 ![Image description](https://i.ibb.co/WndvNfT/Sequence-Diagram.jpg)
 
 
-* Diagram Sequence.        
+* Diagram Sequence.                                                  
 ![Image description](https://i.ibb.co/njXNJLQ/Coopera-Sequence.jpg)
 
 * Class Diagram.
@@ -60,8 +60,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Some API Response
-* [Products](https://api.jsonbin.io/b/5eb4abef47a2266b1474af69)
-* [Categories](https://api.jsonbin.io/b/5eb4ae8d8284f36af7b7607d)
+* [Products](https://api.jsonbin.io/b/5eb4b07747a2266b1474b17f)
+* [Categories](https://api.jsonbin.io/b/5eb4b00f8284f36af7b7614c)
 
 ## License
 
