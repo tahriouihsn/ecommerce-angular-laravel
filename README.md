@@ -43,12 +43,14 @@ composer install
 ## Descrpition fonctionnelle
 * L’Authentification sur le site JWT.
 * Permettre au coopérative de déposer leurs produits(CRUD)
-* Permettre aux clients de consulter les produits déposer par les coopératives.
-* Permettre aux clients de passer des commandes sur notre site.
-* Permettre aux clients de consulter l’archive de commande qu’il a passer.
-* Permettre aux clients de donner leurs avis sur un ou plusieurs produits.
-* Permettre aux coopératives de voir la liste des commandes qu’ils vont fournir au client.
-* Permettre au client d'ajouter un ou plusieurs produits .
+* Permettre aux clients de consulter les produits déposer par les coopératives(Backend).
+* Permettre aux clients de passer des commandes sur notre site(Backend).
+* Permettre aux clients de consulter l’archive de commande qu’il a passer(Backend).
+* Permettre aux clients de donner leurs avis sur un ou plusieurs produits(Backend) Just affichage sur Frontend.
+* Permettre aux coopératives de voir la liste des commandes qu’ils vont fournir au client (Backend).
+* Permettre au client d'ajouter un ou plusieurs produits (Backend).
+* Validation d'email (Backend).
+* Permettre d'ajouté les produits au panier .
 
 
 
